@@ -1,0 +1,13 @@
+def Linear_Search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+numbers = [4, 2, 7, 1, 9]
+
+result = Linear_Search(numbers, 7)
+
+if result != -1:
+    print("Found at index:", result)
+else:
+    print("Not found")
